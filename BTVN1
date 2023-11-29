@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(){
+	int a;
+	int *pointer = &a;
+	printf("Nhap vao mot so: ");
+	scanf("%d", &a);
+	printf("Dia chi cua bien a = %d\n", &a);
+	printf("Gia tri cua bien a= %d\n", a);
+	printf("Dia chi cua bien a nam trong pointer = %d\n", pointer);
+	printf("Gia tri nam trong bien a thong qua con tro pointer = %d", *pointer);
+}

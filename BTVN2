@@ -1,0 +1,18 @@
+#include <stdio.h>
+int swap(int *a, int *b)
+{
+	int temp = *a;
+	*a = *b; 
+	*b = temp;	
+}
+
+int main(){
+	int number1, number2;
+	printf("Nhap vao 2 so nguyen: ");
+	scanf("%d %d", &number1, &number2);
+	int sub = number1 - number2;
+	printf("Hieu cua hai so truoc khi doi cho %d - %d = %d\n", number1, number2, sub);
+	swap(&number1, &number2);
+	int sub2 = number1 - number2;
+	printf("Hieu cua hai so sau khi doi cho %d - %d = %d", number1, number2, sub2);
+}
